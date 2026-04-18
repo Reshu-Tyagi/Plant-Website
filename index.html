@@ -11,7 +11,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
 </head>
 
-<body class="bg-[#012a1a] h-full md:h-[100vh] relative">
+<body class="bg-[#012a1a] scroll-smooth h-full md:h-[100vh] relative">
 
   <!-- nav bar -->
   <nav
@@ -29,10 +29,10 @@
 
     <div>
       <ul class="md:flex justify-center items-center gap-[2rem] text-white font-semibold text-xl hidden ">
-        <li class="hover:text-yellow-500 transition delay-150 duration-300 ease-in-out cursor-pointer">Home</li>
-        <li class="hover:text-yellow-500 transition delay-150 duration-300 ease-in-out cursor-pointer">About</li>
-        <li class="hover:text-yellow-500 transition delay-150 duration-300 ease-in-out cursor-pointer">Popular</li>
-        <li class="hover:text-yellow-500 transition delay-150 duration-300 ease-in-out cursor-pointer">Review</li>
+        <li><a href="#home" class="hover:text-yellow-500 transition delay-150 duration-300 ease-in-out cursor-pointer"> Home </a></li>
+        <li><a href="#about" class="hover:text-yellow-500 transition delay-150 duration-300 ease-in-out cursor-pointer"> About </a></li>
+        <li><a href="#popular" class="hover:text-yellow-500 transition delay-150 duration-300 ease-in-out cursor-pointer"> Popular </a></li>
+        <li><a href="#review" class="hover:text-yellow-500 transition delay-150 duration-300 ease-in-out cursor-pointer"> Review </a></li>
       </ul>
 
 
@@ -43,7 +43,7 @@
 
   <!-- main section -->
 
-  <main class="flex items-center justify-between px-[10rem] gap-[2rem] h-full mt-[2rem]">
+  <main id="home" class="flex items-center justify-between px-[10rem] gap-[2rem] h-full mt-[2rem]  scroll-mt-24">
 
     <div class="w-[50%]">
       <h1 class="text-5xl animate-pulse font-extrabold text-white font-serif "><span
@@ -197,7 +197,7 @@
   </div>
 
   <!-- About Us Start -->
-  <div class="py-[3.5rem]">
+  <div id="about" class="py-[3.5rem]  scroll-mt-24">
     <h2 class="text-yellow-500 font-mono font-extrabold text-5xl  text-center subpixel-antialiased">
       About Us
     </h2>
@@ -256,7 +256,7 @@
   <!-- About Us End -->
 
   <!-- Choice Plant -->
-  <div class="bg-[#045432e6] py-[3.5rem]">
+  <div  id="popular" class="bg-[#045432e6] py-[3.5rem]  scroll-mt-24">
 
     <h2 class="text-yellow-500 font-mono font-extrabold text-5xl text-center subpixel-antialiased  ">
       Your Choice Plant</h2>
@@ -378,7 +378,7 @@
   </div>
 
   <!-- Review -->
-  <section class="bg-green-950 py-16">
+  <section id="review" class="bg-green-950 py-16 h-[100vh]  scroll-mt-24">
 
     <!-- Heading -->
     <div class="text-center mb-12">
@@ -387,10 +387,10 @@
     </div>
   
     <!-- Cards -->
-    <div class="max-w-6xl mx-auto grid md:grid-cols-3 gap-8 px-6">
+    <div class="max-w-6xl mx-auto grid md:grid-cols-3 gap-8 px-10 ">
   
       <!-- Card 1 -->
-      <div class="bg-green-900 p-6 rounded-lg relative">
+      <div class="bg-green-900 p-6 rounded-lg relative hover:scale-105 hover:-translate-y-2 hover:shadow-2xl">
         <p class="text-gray-300 text-sm mb-6">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique culpa ut amet voluptas asperiores alias sed consequatur.
         </p>
@@ -409,7 +409,7 @@
   
   
       <!-- Card 2 -->
-      <div class="bg-green-900 p-6 rounded-lg relative">
+      <div class="bg-green-900 p-6 rounded-lg relative hover:scale-105 hover:-translate-y-2 hover:shadow-2xl">
         <p class="text-gray-300 text-sm mb-6">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique culpa ut amet voluptas asperiores alias sed consequatur.
         </p>
@@ -427,7 +427,7 @@
   
   
       <!-- Card 3 -->
-      <div class="bg-green-900 p-6 rounded-lg relative">
+      <div class="bg-green-900 p-6 rounded-lg relative hover:scale-105 hover:-translate-y-2 hover:shadow-2xl">
         <p class="text-gray-300 text-sm mb-6">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique culpa ut amet voluptas asperiores alias sed consequatur.
         </p>
@@ -462,7 +462,7 @@
     <!-- Newsletter Section -->
     <!-- <div class=" py-2 relative"> -->
       <div
-        class="max-w-5xl mx-auto bg-red-800 rounded-lg p-6 flex flex-col md:flex-row items-center justify-between gap-4 relative absolute -bottom-[3rem] top-[-3rem]">
+        class="max-w-5xl mx-auto bg-green-900 rounded-lg p-6 flex flex-col md:flex-row items-center justify-between gap-4 relative absolute -bottom-[3rem] top-[-3rem]">
 
         <h2 class="text-yellow-400 text-xl font-semibold">
           <span class="text-yellow-500 font-bold">Subscribe</span> to our newsletter
